@@ -15,11 +15,11 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v3
 
-      - name: ☕ Set up JDK 17
+      - name: ☕ Set up JDK 17 (Requerido por AGP 8.9.0)
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '17' # ⚠️ Aquí el cambio clave
+          java-version: '17'
 
       - name: 💎 Set up Ruby
         uses: ruby/setup-ruby@v1
